@@ -2,7 +2,9 @@ package com.example.p004_basicviews;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View;
@@ -18,10 +20,14 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton imageButton4;
     private ImageButton imageButton5;
     private boolean flag = true;
+    int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+    View decorView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //перекрытие разметки (панель накладывается на разметку)
+        //getWindow().requestFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
         setContentView(R.layout.activity_main);
         imageButton = (ImageButton)findViewById(R.id.imageButton);
         imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
@@ -30,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         imageButton4 = (ImageButton)findViewById(R.id.imageButton4);
         imageButton5 = (ImageButton)findViewById(R.id.imageButton5);
         arrow_button = (Button)findViewById(R.id.arrow_button);
+
+        //сокрытие строки состояния и навигации
+        decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(uiOptions);
+
 
         imageButton.setOnClickListener(new View.OnClickListener()
         {
@@ -109,11 +120,14 @@ public class MainActivity extends AppCompatActivity {
                 flag = !flag;
             }
         });
-        /*arrow_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });*/
     }
+
+    public void startNewActivity(View v) {
+        Intent intent = new Intent(this,SecondActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }
