@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">P004_BasicViews</string>
+    <string name="about_text">
+    У лукоморья дуб зелёный;
+    Златая цепь на дубе том:
+    И днём и ночью <b>кот учёный</b>
+    Всё ходит по цепи кругом;
+    Идёт <b>направо</b> - песнь заводит,
+    <b>Налево</b> - сказку говорит.</string>
+    <string name="about_title">О программе</string>
+</resources>
