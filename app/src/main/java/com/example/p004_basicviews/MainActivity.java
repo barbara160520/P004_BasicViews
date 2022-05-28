@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View;
@@ -20,14 +21,24 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton imageButton4;
     private ImageButton imageButton5;
     private boolean flag = true;
-    int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
-    View decorView;
+    //int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+    //View decorView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //перекрытие разметки (панель накладывается на разметку)
         //getWindow().requestFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
+        //setContentView(R.layout.activity_main);
+
+        //сокрытие строки состояния и маскировка навигации
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
+                WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+
         setContentView(R.layout.activity_main);
         imageButton = (ImageButton)findViewById(R.id.imageButton);
         imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
@@ -38,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         arrow_button = (Button)findViewById(R.id.arrow_button);
 
         //сокрытие строки состояния и навигации
-        decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(uiOptions);
+        /*decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(uiOptions);*/
 
 
         imageButton.setOnClickListener(new View.OnClickListener()
