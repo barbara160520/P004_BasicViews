@@ -9,17 +9,16 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button arrow_button;
-    private ImageButton imageButton;
-    private ImageButton imageButton1;
-    private ImageButton imageButton2;
-    private ImageButton imageButton3;
-    private ImageButton imageButton4;
-    private ImageButton imageButton5;
+    private ImageButton solarButton;
+    private ImageButton himiyaButton;
+    private ImageButton fishButton;
+    private ImageButton matButton;
+    private ImageButton skeletonButton;
+    private ImageButton slonButton;
     private boolean flag = true;
     //int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
     //View decorView;
@@ -40,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 
         setContentView(R.layout.activity_main);
-        imageButton = (ImageButton)findViewById(R.id.imageButton);
-        imageButton1 = (ImageButton)findViewById(R.id.imageButton1);
-        imageButton2 = (ImageButton)findViewById(R.id.imageButton2);
-        imageButton3 = (ImageButton)findViewById(R.id.imageButton3);
-        imageButton4 = (ImageButton)findViewById(R.id.imageButton4);
-        imageButton5 = (ImageButton)findViewById(R.id.imageButton5);
+        solarButton = (ImageButton)findViewById(R.id.solarButton);
+        himiyaButton = (ImageButton)findViewById(R.id.himiyaButton);
+        fishButton = (ImageButton)findViewById(R.id.fishButton);
+        matButton = (ImageButton)findViewById(R.id.matButton);
+        skeletonButton = (ImageButton)findViewById(R.id.skeletonButton);
+        slonButton = (ImageButton)findViewById(R.id.slonButton);
         arrow_button = (Button)findViewById(R.id.arrow_button);
 
         //сокрытие строки состояния и навигации
@@ -53,81 +52,81 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);*/
 
 
-        imageButton.setOnClickListener(new View.OnClickListener()
+        solarButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 // меняем изображение на кнопке
                 if (flag)
-                    imageButton.setImageResource(R.drawable.card2);
+                    solarButton.setImageResource(R.drawable.card2);
                 else
                     // возвращаем первую картинку
-                    imageButton.setImageResource(R.drawable.card1);
+                    solarButton.setImageResource(R.drawable.card1);
                 flag = !flag;
             }
         });
-        imageButton1.setOnClickListener(new View.OnClickListener()
+        himiyaButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 // меняем изображение на кнопке
                 if (flag)
-                    imageButton1.setImageResource(R.drawable.card3);
+                    himiyaButton.setImageResource(R.drawable.card3);
                 else
                     // возвращаем первую картинку
-                    imageButton1.setImageResource(R.drawable.card2);
+                    himiyaButton.setImageResource(R.drawable.card2);
                 flag = !flag;
             }
         });
-        imageButton2.setOnClickListener(new View.OnClickListener()
+        fishButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 // меняем изображение на кнопке
                 if (flag)
-                    imageButton2.setImageResource(R.drawable.card4);
+                    fishButton.setImageResource(R.drawable.card4);
                 else
                     // возвращаем первую картинку
-                    imageButton2.setImageResource(R.drawable.card3);
+                    fishButton.setImageResource(R.drawable.card3);
                 flag = !flag;
             }
         });
-        imageButton3.setOnClickListener(new View.OnClickListener()
+        matButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 // меняем изображение на кнопке
                 if (flag)
-                    imageButton3.setImageResource(R.drawable.card5);
+                    matButton.setImageResource(R.drawable.card5);
                 else
                     // возвращаем первую картинку
-                    imageButton3.setImageResource(R.drawable.card4);
+                    matButton.setImageResource(R.drawable.card4);
                 flag = !flag;
             }
         });
-        imageButton4.setOnClickListener(new View.OnClickListener()
+        skeletonButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 // меняем изображение на кнопке
                 if (flag)
-                    imageButton4.setImageResource(R.drawable.card6);
+                    skeletonButton.setImageResource(R.drawable.card6);
                 else
                     // возвращаем первую картинку
-                    imageButton4.setImageResource(R.drawable.card5);
+                    skeletonButton.setImageResource(R.drawable.card5);
                 flag = !flag;
             }
         });
-        imageButton5.setOnClickListener(new View.OnClickListener()
+        slonButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 // меняем изображение на кнопке
                 if (flag)
-                    imageButton5.setImageResource(R.drawable.card1);
+                    slonButton.setImageResource(R.drawable.card1);
                 else
                     // возвращаем первую картинку
-                    imageButton5.setImageResource(R.drawable.card6);
+                    slonButton.setImageResource(R.drawable.card6);
                 flag = !flag;
             }
         });

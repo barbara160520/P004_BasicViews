@@ -43,7 +43,7 @@
 
 <!--Первая карточка-->
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/solarButton"
         android:layout_width="158dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
@@ -56,12 +56,12 @@
         android:paddingRight="8dp"
 
         android:scaleType="fitStart"
-        app:layout_constraintStart_toEndOf="@+id/imageButton1"
+        app:layout_constraintStart_toEndOf="@+id/himiyaButton"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/mat" />
 
     <TextView
-        android:id="@+id/textCard1"
+        android:id="@+id/solarTextCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -74,11 +74,11 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+        app:layout_constraintStart_toStartOf="@+id/solarButton"
+        app:layout_constraintTop_toTopOf="@+id/solarButton" />
     <!--Вторая карточка-->
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/himiyaButton"
         android:layout_width="158dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
@@ -95,7 +95,7 @@
         app:srcCompat="@drawable/kosmos" />
 
     <TextView
-        android:id="@+id/textCard2"
+        android:id="@+id/himiyaTextCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -108,11 +108,11 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton1"
-        app:layout_constraintTop_toTopOf="@+id/imageButton1" />
+        app:layout_constraintStart_toStartOf="@+id/himiyaButton"
+        app:layout_constraintTop_toTopOf="@+id/himiyaButton" />
     <!--Третья карточка-->
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/fishButton"
         android:layout_width="158dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
@@ -124,12 +124,12 @@
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:scaleType="fitStart"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/solarButton"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/maxresdefault" />
 
     <TextView
-        android:id="@+id/textCard3"
+        android:id="@+id/fishTextCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -142,11 +142,11 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+        app:layout_constraintStart_toStartOf="@+id/fishButton"
+        app:layout_constraintTop_toTopOf="@+id/fishButton" />
     <!--Четверта карточка-->
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/matButton"
         android:layout_width="158dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
@@ -159,11 +159,11 @@
         android:paddingRight="8dp"
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@+id/himiyaButton"
         app:srcCompat="@drawable/himiya" />
 
     <TextView
-        android:id="@+id/textCard5"
+        android:id="@+id/matTextCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -176,12 +176,12 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="@+id/imageButton3" />
+        app:layout_constraintStart_toStartOf="@+id/matButton"
+        app:layout_constraintTop_toTopOf="@+id/matButton" />
 
     <!--Пятая карточка-->
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/skeletonButton"
         android:layout_width="158dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
@@ -193,12 +193,12 @@
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:scaleType="fitStart"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/slonButton"
+        app:layout_constraintTop_toBottomOf="@+id/fishButton"
         app:srcCompat="@drawable/slon" />
 
     <TextView
-        android:id="@+id/textCard4"
+        android:id="@+id/skeletonTextCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -211,12 +211,12 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+        app:layout_constraintStart_toStartOf="@+id/skeletonButton"
+        app:layout_constraintTop_toTopOf="@+id/skeletonButton" />
 
     <!--Шестая карточка-->
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/slonButton"
         android:layout_width="158dp"
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
@@ -228,12 +228,12 @@
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:scaleType="fitStart"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/matButton"
+        app:layout_constraintTop_toBottomOf="@+id/solarButton"
         app:srcCompat="@drawable/fish" />
 
     <TextView
-        android:id="@+id/textCard6"
+        android:id="@+id/slonTextCard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -246,7 +246,7 @@
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5" />
+        app:layout_constraintStart_toStartOf="@+id/slonButton"
+        app:layout_constraintTop_toTopOf="@+id/slonButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
