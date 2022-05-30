@@ -15,13 +15,10 @@
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="57dp"
         android:background="@drawable/round"
-        android:drawableRight="@drawable/next"
-
-        android:gravity="center"
+        android:drawableRight="@drawable/next_left"
+        android:gravity="center|right"
         android:onClick="startNewActivity"
         app:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +31,7 @@
         android:layout_height="32dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="110dp"
         android:layout_marginTop="65dp"
         android:gravity="center"
         android:text="Выберите модель"
@@ -62,7 +58,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/card1" />
+        app:srcCompat="@drawable/kosmos" />
 
     <TextView
         android:id="@+id/textCard1"
@@ -70,12 +66,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="95dp"
         android:clickable="false"
         android:gravity="center"
-        android:text="Химия"
+        android:text="Солнечная система"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -98,7 +93,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/card2" />
+        app:srcCompat="@drawable/himiya" />
 
     <TextView
         android:id="@+id/textCard2"
@@ -106,12 +101,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="95dp"
         android:clickable="false"
         android:gravity="center"
-        android:text="Космос"
+        android:text="Химия"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -134,7 +128,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton1"
-        app:srcCompat="@drawable/card3" />
+        app:srcCompat="@drawable/fish" />
 
     <TextView
         android:id="@+id/textCard3"
@@ -142,8 +136,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="95dp"
         android:clickable="false"
         android:gravity="center"
@@ -170,7 +163,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@drawable/card4" />
+        app:srcCompat="@drawable/mat" />
 
     <TextView
         android:id="@+id/textCard5"
@@ -178,8 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="95dp"
         android:clickable="false"
         android:gravity="center"
@@ -196,7 +188,6 @@
         android:layout_height="120dp"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/card"
         android:paddingLeft="8dp"
@@ -205,7 +196,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/card5" />
+        app:srcCompat="@drawable/maxresdefault" />
 
     <TextView
         android:id="@+id/textCard4"
@@ -213,8 +204,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="95dp"
         android:clickable="false"
         android:gravity="center"
@@ -240,7 +230,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/card6" />
+        app:srcCompat="@drawable/slon" />
 
     <TextView
         android:id="@+id/textCard6"
@@ -248,8 +238,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="95dp"
         android:clickable="false"
         android:gravity="center"
