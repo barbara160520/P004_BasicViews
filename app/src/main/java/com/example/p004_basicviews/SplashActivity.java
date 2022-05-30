@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
     //отображение 5 секунд
-    private final int SPLASH_DISPLAY_LENGHT = 3500;
+    private final int SPLASH_DISPLAY_LENGHT = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

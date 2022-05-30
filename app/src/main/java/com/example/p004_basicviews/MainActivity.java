@@ -9,17 +9,20 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button arrow_button;
     private ImageButton solarButton;
+    private TextView solarTextCard;
     private ImageButton himiyaButton;
     private ImageButton fishButton;
     private ImageButton matButton;
     private ImageButton skeletonButton;
     private ImageButton slonButton;
     private boolean flag = true;
+    private Intent arcoreClass;
     //int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
     //View decorView;
 
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         solarButton = (ImageButton)findViewById(R.id.solarButton);
+        solarTextCard = (TextView)findViewById(R.id.solarTextCard);
         himiyaButton = (ImageButton)findViewById(R.id.himiyaButton);
         fishButton = (ImageButton)findViewById(R.id.fishButton);
         matButton = (ImageButton)findViewById(R.id.matButton);
@@ -56,78 +60,54 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                // меняем изображение на кнопке
-                if (flag)
-                    solarButton.setImageResource(R.drawable.card2);
-                else
-                    // возвращаем первую картинку
-                    solarButton.setImageResource(R.drawable.card1);
-                flag = !flag;
+                Intent intent = new Intent(MainActivity.this,ARCoreActivity.class);
+                intent.putExtra("name", "solar.glb");
+                startActivity(intent);
             }
         });
         himiyaButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                // меняем изображение на кнопке
-                if (flag)
-                    himiyaButton.setImageResource(R.drawable.card3);
-                else
-                    // возвращаем первую картинку
-                    himiyaButton.setImageResource(R.drawable.card2);
-                flag = !flag;
+                Intent intent = new Intent(MainActivity.this,ARCoreActivity.class);
+                intent.putExtra("name", "chemistry.glb");
+                startActivity(intent);
             }
         });
         fishButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                // меняем изображение на кнопке
-                if (flag)
-                    fishButton.setImageResource(R.drawable.card4);
-                else
-                    // возвращаем первую картинку
-                    fishButton.setImageResource(R.drawable.card3);
-                flag = !flag;
+                Intent intent = new Intent(MainActivity.this,ARCoreActivity.class);
+                intent.putExtra("name", "fish.glb");
+                startActivity(intent);
             }
         });
         matButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                // меняем изображение на кнопке
-                if (flag)
-                    matButton.setImageResource(R.drawable.card5);
-                else
-                    // возвращаем первую картинку
-                    matButton.setImageResource(R.drawable.card4);
-                flag = !flag;
+                Intent intent = new Intent(MainActivity.this,ARCoreActivity.class);
+                intent.putExtra("name", "math.glb");
+                startActivity(intent);
             }
         });
         skeletonButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                // меняем изображение на кнопке
-                if (flag)
-                    skeletonButton.setImageResource(R.drawable.card6);
-                else
-                    // возвращаем первую картинку
-                    skeletonButton.setImageResource(R.drawable.card5);
-                flag = !flag;
+                Intent intent = new Intent(MainActivity.this,ARCoreActivity.class);
+                intent.putExtra("name", "skeleton.glb");
+                startActivity(intent);
             }
         });
         slonButton.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                // меняем изображение на кнопке
-                if (flag)
-                    slonButton.setImageResource(R.drawable.card1);
-                else
-                    // возвращаем первую картинку
-                    slonButton.setImageResource(R.drawable.card6);
-                flag = !flag;
+                Intent intent = new Intent(MainActivity.this,ARCoreActivity.class);
+                intent.putExtra("name", "slon.glb");
+                startActivity(intent);
             }
         });
 
@@ -137,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,SecondActivity.class);
         startActivity(intent);
     }
-
 
 
 }
