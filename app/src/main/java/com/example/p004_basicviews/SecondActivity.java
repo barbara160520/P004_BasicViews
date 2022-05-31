@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private TextView nameModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,10 @@ public class SecondActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         setContentView(R.layout.activity_second);
+
+        nameModel = (TextView)findViewById(R.id.nameModel);
+        String name = getIntent().getExtras().get("name").toString();
+        nameModel.setText(name);
     }
 
     public void goBack(View v){

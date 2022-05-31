@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startNewActivity(View v) {
         Intent intent = new Intent(this,SecondActivity.class);
+        intent.putExtra("name", "RABBIT.glb");
         startActivity(intent);
     }
 
