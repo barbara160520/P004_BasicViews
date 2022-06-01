@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/fon1"
+    android:id="@+id/main_layout"
     >
 
 <!--Кнопка стрелка-->
@@ -19,7 +20,7 @@
         android:background="@drawable/round"
         android:drawableRight="@drawable/next_left"
         android:gravity="center|right"
-        android:onClick="startNewActivity"
+        android:onClick="startSecondActivity"
         app:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
