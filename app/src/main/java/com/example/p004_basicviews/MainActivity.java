@@ -168,10 +168,10 @@ public class MainActivity extends AppCompatActivity{
 
                                         //проверка условия
                                         if (xDiff > 0){
-                                            //Когда смахивание в право
+                                            //Когда смахивание вправо
 
                                         }else {
-                                            //Когда смахивание в лево
+                                            //Когда смахивание влево
                                             Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                                             intent.putExtra("name", "RABBIT.glb");
                                             startActivity(intent);

@@ -84,13 +84,13 @@ public class SecondActivity extends AppCompatActivity {
 
                                         //проверка условия
                                         if (xDiff > 0){
-                                            //Когда смахивание в право
+                                            //Когда смахивание вправо
                                             Intent intent = new Intent(SecondActivity.this,MainActivity.class);
                                             startActivity(intent);
                                             SecondActivity.this.finish();
 
                                         }else {
-                                            //Когда смахивание в лево
+                                            //Когда смахивание влево
 
                                         }
                                         return true;

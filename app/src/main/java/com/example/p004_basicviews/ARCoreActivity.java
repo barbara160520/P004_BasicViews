@@ -84,13 +84,13 @@ public class ARCoreActivity extends AppCompatActivity {
 
                                         //проверка условия
                                         if (xDiff > 0){
-                                            //Когда смахивание в право
+                                            //Когда смахивание вправо
                                             Intent intent = new Intent(ARCoreActivity.this,MainActivity.class);
                                             startActivity(intent);
                                             ARCoreActivity.this.finish();
 
                                         }else {
-                                            //Когда смахивание в лево
+                                            //Когда смахивание влево
 
                                         }
                                         return true;
