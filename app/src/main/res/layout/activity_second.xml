@@ -9,21 +9,22 @@
     android:id="@+id/second_layout"
     >
     <!--Кнопка стрелка-->
-    <Button
+    <ImageButton
         android:id="@+id/arrow_button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:alpha="0.8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="65dp"
         android:background="@drawable/round"
-        android:drawableRight="@drawable/next_right"
-        android:gravity="center"
+        android:gravity="center|right"
         android:onClick="goBack"
-        app:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next_left" />
 
     <TextView
         android:id="@+id/nameModel"
